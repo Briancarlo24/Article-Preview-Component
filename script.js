@@ -6,9 +6,21 @@ const socialMedia = document.querySelector(".social-media");
 const mobile = window.matchMedia("(max-width: 977px)");
 
 if (mobile.matches) {
-  shareIcon.addEventListener("click", mobileButton);
+  shareIcon.addEventListener("click", () => {
+    if (mobile.matches) {
+      mobileButton();
+    } else {
+      desktopButton();
+    }
+  });
 } else {
-  shareIcon.addEventListener("click", desktopButton);
+  shareIcon.addEventListener("click", () => {
+    if (mobile.matches) {
+      mobileButton();
+    } else {
+      desktopButton();
+    }
+  });
 }
 
 function mobileButton() {
