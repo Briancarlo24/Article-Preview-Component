@@ -19,40 +19,50 @@
     ></script>
   </head>
   <body>
-    <main>
-      <figure>
-        <img src="images/drawers.jpg" alt="" />
+    <main class="main">
+      <figure class="img--container">
+        <img src="images/drawers.jpg" alt="drawers" />
       </figure>
-      <section>
-        <h1>
+      <section class="content--container">
+        <h2 class="title">
           Shift the overall look and feel by adding these wonderful touches to
           furniture in your home
-        </h1>
-        <p>
-          Ever been in a room and felt like something was missing? Perhaps it
+        </h2>
+        <p class="desc">
+          Ever been in a room and felt like something&nbsp;was&nbsp;missing? Perhaps it
           felt slightly bare and uninviting. I’ve got some simple tips to help
           you make any room feel complete.
         </p>
+        
+        <div class="social-container">
+       
+          <!-- Person Details -->
+          <div class="person ">
+              <img class="person-picture" src="images/avatar-michelle.jpg" alt="" />
+                <p class="person-name">Brian Carlo Birondo</p>
+                <p class="person-bday">24 Jun 1994</p>
+          </div>
 
-        <div class="icon-container">
-          <div class="profile-container">
-            <img class="picture" src="images/avatar-michelle.jpg" alt="" />
-            <div class="profile">
-              <h4 class="name">Michelle Appleton</h4>
-              <span class="date">28 Jun 2020</span>
-            </div>
+          <!-- Social Media Icons -->
+          <div class="social hidden hidden-desktop">
+              <p class="social-share">Share</p>
+
+              <a href="https://www.facebook.com/briancarlo.birondo"><img class="social-icons icon-facebook" src="images/icon-facebook.svg" alt="facebook"></a>
+
+              <a href="https://www.facebook.com/briancarlo.birondo"><img class="social-icons  icon-twitter" src="images/icon-twitter.svg" alt="twitter"></a>
+
+              <a href="https://www.facebook.com/briancarlo.birondo"><img class="social-icons  icon-pinterest" src="images/icon-pinterest.svg" alt="pinterest"></a>
           </div>
-          <div class="social-media hidden">
-            <span class="share">Share</span>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-pinterest"></i>
+
+          <div>
+            <img class="icon-share icon-share-button" src="images/icon-share.svg" alt="icon share">
           </div>
-          <i class="fas fa-share"></i>
         </div>
+
+
       </section>
     </main>
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
@@ -60,7 +70,7 @@
       <a href="https://web.facebook.com/briancarlo.birondo/"
         >Brian Carlo Birondo</a
       >
-    </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
